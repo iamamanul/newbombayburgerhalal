@@ -1,0 +1,976 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.section1 {
+    height: 87vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    position: relative;
+    background-image: url("assets/images/pizza-bg3.jpg");
+    background-image: url("pizza-bg3.jpg");
+    background-size: cover;
+    /* Ensure the image covers the entire box */
+    background-position: top;
+    /* Center the image within the box */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+}
+
+nav {
+    /* background-color: brown; */
+    height: 15vh;
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+
+
+}
+
+.logo {
+    /* background-color: rgba(240, 248, 255, 0.297); */
+    height: 14vh;
+    width: 25vw;
+    margin: auto;
+    margin-left: 4vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.logo h2 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 1px black,
+        -2px -2px 1px black,
+        -2px 2px 1px black,
+        2px -2px 1px black;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.logotext {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px black,
+        -2px -2px 1px black,
+        -2px 2px 1px black,
+        2px -2px 1px black;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+
+.navigation {
+    /* background-color: bisque; */
+    height: 10vh;
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15vw;
+
+
+
+}
+
+.separation1,
+.separation2,
+.separation3,.separation4 {
+    background-color: grey;
+    height: 10px;
+    width: 100%;
+}
+
+
+
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+   
+
+}
+
+.section-header h3 {
+    color: #2f86ce;
+    font-family: "Akronim", system-ui;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-top: 25px;
+    font-size: 2rem;
+}
+
+.section-header p {
+    color: #777;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    padding: 0 15px;
+    letter-spacing: 0.56px;
+    line-height: 26px;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+@media (min-width: 992px) {
+    .section-header p {
+        padding: 0 22%;
+    }
+}
+
+
+
+
+
+.section2 {
+    width: 100%;
+    background-color: rgb(14, 36, 63);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section2 a {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}
+
+.box {
+    width: 35%;
+    /* Two boxes side by side */
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+/* Box colors */
+.box1 {
+    background-color: #ff9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 2px 2px 1px black,
+        -2px -2px 1px black,
+        2px -2px 1px black,
+        -2px 2px 1px black;
+
+}
+
+/* .box1 p{
+    margin-left: 50%;
+} */
+
+.box2 {
+    background-color: #99ccff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 3px 3px 1px black,
+        -3px -3px 1px black,
+        3px -3px 1px black,
+        -3px 3px 1px black;
+
+}
+
+.box3 {
+    background-color: #99ff99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 3px 3px 1px black,
+        -3px -3px 1px black,
+        3px -3px 1px black,
+        -3px 3px 1px black;
+}
+
+.box4 {
+    background-color: #ffff99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 3px 3px 1px black,
+        -3px -3px 1px black,
+        3px -3px 1px black,
+        -3px 3px 1px black;
+}
+
+.box5 {
+    background-color: #ffff99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 3px 3px 1px black,
+        -3px -3px 1px black,
+        3px -3px 1px black,
+        -3px 3px 1px black;
+}
+
+.box6 {
+    background-color: #ffff99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 3px 3px 1px black,
+        -3px -3px 1px black,
+        3px -3px 1px black,
+        -3px 3px 1px black;
+}
+
+/* Hover effect for a bit of animation */
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+        /* Stacking boxes one below another on phones */
+    }
+
+    .box p {
+        font-size: 35px;
+    }
+}
+
+
+
+.section3 {
+    max-width: 1500px;
+    /* background-color: rgb(14, 36, 63); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* About Section Styles */
+
+.aboutbelow {
+    background-color: #f2f2f2;
+    /* Light gray background */
+    padding: 50px 0;
+    font-family: 'Open Sans', sans-serif;
+    /* Beautiful font */
+}
+
+.aboutbelow .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    /* White background */
+    border: 1px solid #ddd;
+    /* Light gray border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutbelow h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #4b57dc;
+    /* Dark gray text */
+    font-weight: bold;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 1px 1px rgb(148, 192, 228);
+}
+
+.aboutbelow p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+    /* Medium gray text */
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+
+}
+
+.welcome {
+    text-align: center;
+}
+
+.story p {
+    text-align: center;
+}
+
+.mission p {
+    text-align: center;
+}
+
+.timings p {
+    text-align: center;
+}
+
+.call-to-action p {
+    text-align: center;
+}
+
+
+.story,
+.mission,
+.testimonials,
+.timings,
+.call-to-action {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    /* Light gray background */
+    border: 1px solid #ccc;
+    /* Medium gray border */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.testimonials {
+    width: 100%;
+    text-align: left;
+}
+
+.ownerimage {
+    height: 300px;
+    width: 300px;
+    border-radius: 15%;
+    background-color: yellow;
+    border: 5px solid black;
+
+    background: url("ownerimg.jpeg");
+    background-size: cover;
+    /* Ensure the image covers the entire box */
+    background-position: center;
+    /* Center the image within the box */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+}
+
+.story h3,
+.mission h3,
+.testimonials h3,
+.timings h3,
+.call-to-action h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    /* Dark gray text */
+    font-weight: bold;
+}
+
+.testimonials ul {
+    margin-left: 1vw;
+}
+
+
+
+/* .aboutsection {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 95%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}  */
+
+
+/* .aboutsection:hover {
+    transform: scale(1.03);
+} */
+
+
+
+
+.home {
+    background-color: rgba(132, 212, 246, 0.1);
+    /*10% opacity*/
+    height: 40px;
+    width: 15%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: semibold;
+    color: white;
+}
+
+.shop {
+    background-color: rgba(132, 212, 246, 0.1);
+    height: 40px;
+    width: 15%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: semibold;
+    color: white;
+}
+
+.about {
+    background-color: rgba(132, 212, 246, 0.1);
+    height: 40px;
+    width: 15%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: semibold;
+    color: white;
+}
+
+.contact {
+    background-color: rgba(132, 212, 246, 0.1);
+    height: 40px;
+    width: 15%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: semibold;
+    color: white;
+
+}
+
+.profile {
+    /* background-color: #ff999c; */
+    height: 65px;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profilebox {
+    width: 60%;
+    height: 90%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+
+    border-style: dotted;
+    transition: transform 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilebox .person {
+    width: 50%;
+
+}
+
+.home:hover,
+.shop:hover,
+.about:hover,
+.contact:hover {
+    transform: scale(1.07);
+    background-color: rgba(135, 207, 235, 0.24);
+}
+
+.profilebox:hover {
+    transform: scale(1.07);
+
+}
+
+
+
+.hamburger {
+    /* background-color: #b2aadf; */
+    height: 55px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hamburger .icon {
+    width: 50%;
+    cursor: pointer;
+
+}
+
+
+.box1 {
+    background-image: url("pizza\ product.png");
+    /* Set your image here */
+    background-size: cover;
+    /* Ensure the image covers the entire box */
+    background-position: center;
+    /* Center the image within the box */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+}
+
+.box2 {
+    background-image: url("burger\ product.jpg");
+    /* Set your image here */
+    background-size: cover;
+    /* Ensure the image covers the entire box */
+    background-position: center;
+    /* Center the image within the box */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+}
+
+.box3 {
+    background-image: url("sandwich\ product.JPG");
+    /* Set your image here */
+    background-size: cover;
+    /* Ensure the image covers the entire box */
+    background-position: center;
+    /* Center the image within the box */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+}
+
+.box4 {
+    background-image: url("roll\ product.jpg");
+    /* Set your image here */
+    background-size: cover;
+    /* Ensure the image covers the entire box */
+    background-position: center;
+    /* Center the image within the box */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+}
+
+.box5 {
+    background-image: url("frenchfry\ product.avif");
+    /* Set your image here */
+    background-size: cover;
+    /* Ensure the image covers the entire box */
+    background-position: center;
+    /* Center the image within the box */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+}
+
+.box6 {
+    background-image: url("popcorn\ product.JPG");
+    /* Set your image here */
+    background-size: cover;
+    /* Ensure the image covers the entire box */
+    background-position: center;
+    /* Center the image within the box */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+
+}
+
+
+
+
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /* Hidden off-screen initially */
+    width: 250px;
+    height: 100%;
+    background-color: rgb(34, 20, 20);
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+    /* To make sure it's above everything else */
+    overflow-y: auto;
+
+}
+
+.sidebar.open {
+    right: 0;
+    /* Slide in when open */
+}
+
+.sidebar .close-btn {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.side-nav {
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.side-nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #4444443f;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+
+    transition: transform 0.3s;
+    width: 60%;
+}
+
+.side-nav #sideprofile {
+    background-color: #f3f35a43;
+    color: white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+
+
+}
+
+.side-nav #sideprofile .person {
+    width: 40%;
+    height: 8vh;
+    background-color: #c8e4f6;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.side-nav .person svg {
+    height: 2.5vw;
+
+}
+
+.side-nav .textpro {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.side-nav a:hover {
+    background-color: #555;
+    transform: scale(1.04);
+}
+
+
+
+
+/* Footer Container */
+footer {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+/* Heading Styles */
+.footer-section h3 {
+    color: #ffcc00;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Text Styles */
+.footer-section p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+
+
+    }
+
+    .about-us,
+    .contact-us {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Style the circular box */
+.scroll-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 60px;
+    /* increased size */
+    height: 60px;
+    /* increased size */
+    border-radius: 50%;
+    border: 3px solid black;
+    border-style: dotted;
+    background-color: #848a4a;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the arrow SVG */
+.scroll-to-top svg {
+    width: 40px;
+    /* increased size */
+    height: 40px;
+    /* increased size */
+    margin: 10px;
+    fill: #ffffff;
+}
+
+/* Hide the arrow when scrolled to top */
+.scroll-to-top.scrolled-to-top {
+    opacity: 0;
+}
+
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    #scrollToTopBtn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .gototop svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .navigation {
+        position: relative;
+        width: 40vw;
+        padding: 0;
+    }
+
+    .home,
+    .about,
+    .shop,
+    .contact {
+        display: none;
+
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .profilebox {
+        width: 80%;
+    }
+
+    .logo {
+        width: 40vw;
+    }
+
+    .hamburger {
+        width: 15vw;
+        margin-left: 20vw;
+    }
+
+    .box {
+        height: 50vw;
+
+    }
+
+    .side-nav #sideprofile {
+        width: 70%;
+        gap: 1vw;
+
+    }
+
+    .side-nav #sideprofile .person {
+        width: 45%;
+        margin-right: 2vw;
+        padding: 10px;
+        border-radius: 50%;
+
+
+    }
+
+    .side-nav .person svg {
+        height: 10vw;
+
+    }
+
+    .side-nav #sideprofile .person {
+        height: 9vh;
+    }
+
+    .side-nav .textpro {
+        margin-right: 2vw;
+    }
+
+
+}

@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akronim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+
+        }
+
+
+        .section1 {
+            height: 20vh;
+            width: 100%;
+            background-color: rgba(131, 131, 72);
+            position: relative;
+
+
+            background-image: url("pizza-bg3.jpg");
+            background-size: cover;
+            /* Ensure the image covers the entire box */
+            background-position: center;
+            /* Center the image within the box */
+            background-repeat: no-repeat;
+            /* Prevent the image from repeating */
+
+        }
+
+        nav {
+            /* background-color: brown; */
+            height: 15vh;
+            width: 100%;
+            margin-top: 22px;
+            position: absolute;
+            top: 0;
+
+            display: flex;
+
+
+
+
+        }
+
+        .logo {
+            /* background-color: rgba(240, 248, 255, 0.297); */
+            height: 14vh;
+            width: 25vw;
+            margin: auto;
+            margin-left: 4vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        .logo h2 {
+            font-size: 60px;
+            color: black;
+            text-shadow: 2px 2px 1px white,
+                -2px -2px 1px white,
+                -2px 2px 1px white,
+                2px -2px 1px white;
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-style: normal;
+
+
+        }
+
+        .logotext {
+            text-align: center;
+            color: black;
+            text-shadow: 2px 2px 1px white,
+                -2px -2px 1px white,
+                -2px 2px 1px white,
+                2px -2px 1px white;
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-style: normal;
+
+
+        }
+
+
+        .navigation {
+            /* background-color: bisque; */
+            height: 10vh;
+            width: 40vw;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            left: 55vw;
+            top: 1.7vw;
+
+
+
+        }
+
+        .home {
+
+            height: 40px;
+            width: 18%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: semibold;
+            color: white;
+
+
+        }
+
+
+
+        .contact {
+            height: 40px;
+            width: 15%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: semibold;
+            color: white;
+
+
+
+        }
+
+        .home,
+        .shop,
+        .about,
+        .contact {
+            background-color: rgba(0, 0, 0, 0.323);
+        }
+
+        .profile {
+            /* background-color: #ff999c; */
+            height: 65px;
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .profilebox {
+            width: 60%;
+            height: 90%;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            border: 2px solid rgb(255, 255, 255);
+
+            border-style: dotted;
+            transition: transform 0.3s;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profilebox .person {
+            width: 50%;
+
+        }
+
+        .home:hover,
+        .shop:hover,
+        .about:hover,
+        .contact:hover {
+            transform: scale(1.07);
+            background-color: rgb(251, 252, 252, 0.7);
+            color: black;
+        }
+
+        .profilebox:hover {
+            transform: scale(1.07);
+
+        }
+
+
+
+        .hamburger {
+            /* background-color: #b2aadf; */
+            height: 55px;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .hamburger .icon {
+            width: 50%;
+            cursor: pointer;
+
+
+        }
+
+
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            /* Hidden off-screen initially */
+            width: 250px;
+            height: 100%;
+            background-color: rgb(34, 20, 20);
+            transition: 0.3s ease-in-out;
+            z-index: 10;
+            /* To make sure it's above everything else */
+            overflow-y: auto;
+
+        }
+
+        .sidebar.open {
+            right: 0;
+            /* Slide in when open */
+        }
+
+        .sidebar .close-btn {
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .side-nav {
+            margin-top: 220px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .side-nav a {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #4444443f;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+
+            transition: transform 0.3s;
+            width: 60%;
+        }
+
+        .side-nav .home2 {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #4444443f;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+
+            transition: transform 0.3s;
+            width: 60%;
+        }
+
+        .side-nav #sideprofile {
+            background-color: #f3f35a43;
+            color: white;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5vw;
+
+
+        }
+
+        .side-nav #sideprofile .person {
+            width: 40%;
+            height: 8vh;
+            background-color: #c8e4f6;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .side-nav .person svg {
+            height: 2.5vw;
+
+        }
+
+        .side-nav .textpro {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .side-nav a:hover {
+            background-color: #555;
+            transform: scale(1.04);
+        }
+
+        .side-nav .home2:hover {
+            background-color: #555;
+            transform: scale(1.04);
+        }
+
+        .separation1,
+        .separation2,
+        .separation3 {
+            background-color: black;
+            height: 10px;
+            width: 100%;
+        }
+
+        .separation5 {
+            height: 100px;
+            width: 100%;
+
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            .navigation {
+                position: relative;
+                width: 40vw;
+                padding: 0;
+                left: 5vw;
+
+            }
+
+            .home,
+            .about,
+            .shop,
+            .contact {
+                display: none;
+
+            }
+
+            .profile {
+                display: none;
+            }
+
+            .profilebox {
+                width: 80%;
+                display: none;
+            }
+
+            .logo {
+                width: 40vw;
+            }
+
+            .hamburger {
+                width: 15vw;
+                margin-left: 20vw;
+            }
+
+            .box {
+                height: 50vw;
+
+            }
+
+            .side-nav #sideprofile {
+                width: 70%;
+                gap: 1vw;
+
+            }
+
+            .side-nav #sideprofile .person {
+                width: 75%;
+                margin-right: 2vw;
+                padding: 10px;
+                border-radius: 50%;
+
+
+            }
+
+            .side-nav .person svg {
+                height: 9.5vw;
+
+            }
+
+            .side-nav #sideprofile .person {
+                height: 9vh;
+            }
+
+            .side-nav .textpro {
+                margin-right: 2vw;
+            }
+
+            .home {
+
+                height: 0px;
+                width: 0%;
+
+            }
+
+
+
+            .contact {
+                height: 0px;
+                width: 0%;
+
+            }
+
+
+            .profile {
+                /* background-color: #ff999c; */
+                height: 0px;
+                width: 0%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .profilebox {
+                width: 0%;
+                height: 0%;
+
+            }
+
+            .profilebox .person {
+                width: 0%;
+
+            }
+
+        }
+
+        /* Footer Container */
+
+        footer {
+            background-color: #333;
+            color: #f1f1f1;
+            padding: 40px 20px;
+            text-align: center;
+
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 280px;
+            padding: 20px;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+
+        /* Heading Styles */
+        .footer-section h3 {
+            color: #ffcc00;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Text Styles */
+        .footer-section p {
+            font-size: 15px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        /* Footer Bottom Section */
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ddd;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: left;
+
+            }
+
+            .footer-section {
+                text-align: center;
+                margin-bottom: 20px;
+
+
+            }
+
+            .about-us,
+            .contact-us {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="separation1"></div>
+
+    <div class="section1"></div>
+
+    <nav>
+
+        <div class="logo">
+            <h2>
+                BB
+            </h2>
+            <div class="logotext">
+                <h4>Bombay Burger</h4>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a class="home" href="index.html">Home</a>
+            <!-- <a class="shop" href="">Shop</a>
+            <a class="about" href="">About</a> -->
+            <a class="contact" id="contact" href="">Contact</a>
+
+
+            <div class="profile" href="">
+
+                <a class="profilebox" href="">
+
+                    <div class="person" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="skyblue"
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
+                        </svg>
+                    </div>
+
+                </a>
+            </div>
+
+            <a class="hamburger" onclick="openSidebar()">
+
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="white"
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+
+        <span class="close-btn" onclick="closeSidebar()">&times;</span>
+
+        <nav class="side-nav">
+
+            <a id="sideprofile" href="#">
+                <div class="person" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
+                    </svg>
+                </div>
+                <div class="textpro">
+                    Profile
+                </div>
+
+            </a>
+
+            <div class="home2" id="home2">Home</div>
+            <!-- <a id="shop" href="#">Shop</a>
+            <a id="about" href="#">About</a> -->
+            <a id="contact" href="#">Contact</a>
+        </nav>
+    </div>
+
+
+
+    <div class="separation2"></div>
+
+    <div class="discover">Have Delicious Chicken Popcorn here</div>
+
+    <div class="separation5">
+        <div class="sepimg">
+            <img src="underline2.png" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="vegnonveg">
+        <div class="veg vegnonvegbox" id="veg">
+            Veg
+        </div>
+        <div class="nonveg vegnonvegbox" id="nonveg">
+            Non Veg
+        </div>
+
+    </div>
+
+
+    <style>
+       .discover {
+            height: 20%;
+            width: 50%;
+            /* background-color: #eeeadb; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #842424;
+            font-family: "Akronim", system-ui;
+            font-style: normal;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            font-size: 2.5vw;
+            margin: auto;
+            text-align: center;
+            margin-top: 2vw;
+
+        }
+
+        .vegnonveg {
+            /* background-color: yellow; */
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 15vh;
+            width: 80%;
+            gap: 5vw;
+            font-family: "Playwrite DE Grund", system-ui;
+            font-optical-sizing: auto;
+
+
+
+        }
+
+        .vegnonvegbox {
+            background-color: #c8e4f6;
+            font-size: 1vw;
+            padding: 10px 30px;
+            border: 5px solid rgb(175, 29, 29);
+            border-top-right-radius: 25%;
+            border-bottom-left-radius: 25%;
+            border-style: double;
+            color: rgb(175, 29, 29);
+            transition: transform 0.2s;
+        }
+
+        .veg {
+            padding-left: 70px;
+            padding-right: 70px;
+            border: 5px solid green;
+            border-style: double;
+            color: green;
+
+        }
+
+        .veg:hover {
+            background-color: rgba(8, 95, 8, 0.405);
+            color: white;
+            transform: scale(1.09);
+        }
+
+        .nonveg:hover {
+            background-color: rgba(107, 13, 13, 0.392);
+            color: white;
+            transform: scale(1.09);
+
+
+        }
+
+        .sepimg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .sepimg img {
+            width: 70%;
+            height: 5vw;
+            filter: brightness(100%);
+            margin-left: 2vw;
+        }
+
+        @media (max-width: 768px) {
+            .discover {
+                font-size: 10vw;
+                width: 80%;
+
+            }
+
+            .vegnonveg {
+                gap: 10vw;
+                margin-top: -10vw;
+            }
+
+            .vegnonvegbox {
+                font-size: 3vw;
+                padding: 10px;
+
+
+            }
+
+            .veg {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .sepimg img {
+                height: 20vw;
+                width: 100%;
+
+            }
+        }
+    </style>
+
+
+
+
+    <!-- MAIN CONTENT      -->
+
+       <div class="nonvegcontent" id="nonvegcontent">
+
+        <div class="boxes box1">
+            <div class="productimg">
+                <img src="" alt="">
+            </div>
+
+            <div class="producttext">
+                Lorem, ipsum dolor.
+            </div>
+
+            <select>
+                <option value="Regular">Regular</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <style>
+                select {
+                    width: 40%;
+                    height: 8%;
+                    padding: 5px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: medium;
+                    background-color: aliceblue;
+                    border-radius: 5%;
+                }
+            </style>
+
+            <div class="quantity-selector">
+                <button class="decrement">−</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+
+            <button class="add-to-cart-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="cart-icon">
+                    <!-- Cart SVG icon -->
+                    <path
+                        d="M528.12 301.319l47.273-208A16 16 0 0 0 560 80H120L111.06 35.25A32 32 0 0 0 79.626 8H16A16 16 0 0 0 0 24v16a16 16 0 0 0 16 16h45.29l89.355 395.25A64 64 0 1 0 208 448h256a64 64 0 1 0 61.355-80.25l-2.88-12.69zM163.16 144h332.86l-35.276 160H198.436zM240 416a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm256 0a32 32 0 1 1 32-32 32 32 0 0 1-32 32z" />
+                </svg>
+                Add to Cart
+            </button>
+
+            <!-- <div class="message" id="message"></div> -->
+        </div>
+        <div class="boxes box2">
+            <div class="productimg">
+                <img src="" alt="">
+            </div>
+
+            <div class="producttext">
+                Lorem, ipsum dolor.
+            </div>
+
+            <select>
+                <option value="Regular">Regular</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <style>
+                select {
+                    width: 40%;
+                    height: 8%;
+                    padding: 5px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: medium;
+                    background-color: aliceblue;
+                    border-radius: 5%;
+                }
+            </style>
+
+            <div class="quantity-selector">
+                <button class="decrement">−</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+
+            <button class="add-to-cart-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="cart-icon">
+                    <!-- Cart SVG icon -->
+                    <path
+                        d="M528.12 301.319l47.273-208A16 16 0 0 0 560 80H120L111.06 35.25A32 32 0 0 0 79.626 8H16A16 16 0 0 0 0 24v16a16 16 0 0 0 16 16h45.29l89.355 395.25A64 64 0 1 0 208 448h256a64 64 0 1 0 61.355-80.25l-2.88-12.69zM163.16 144h332.86l-35.276 160H198.436zM240 416a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm256 0a32 32 0 1 1 32-32 32 32 0 0 1-32 32z" />
+                </svg>
+                Add to Cart
+            </button>
+
+            <!-- <div class="message" id="message"></div> -->
+        </div>
+        <div class="boxes box3">
+            <div class="productimg">
+                <img src="" alt="">
+            </div>
+
+            <div class="producttext">
+                Lorem, ipsum dolor.
+            </div>
+
+            <select>
+                <option value="Regular">Regular</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <style>
+                select {
+                    width: 40%;
+                    height: 8%;
+                    padding: 5px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: medium;
+                    background-color: aliceblue;
+                    border-radius: 5%;
+                }
+            </style>
+
+            <div class="quantity-selector">
+                <button class="decrement">−</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+
+            <button class="add-to-cart-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="cart-icon">
+                    <!-- Cart SVG icon -->
+                    <path
+                        d="M528.12 301.319l47.273-208A16 16 0 0 0 560 80H120L111.06 35.25A32 32 0 0 0 79.626 8H16A16 16 0 0 0 0 24v16a16 16 0 0 0 16 16h45.29l89.355 395.25A64 64 0 1 0 208 448h256a64 64 0 1 0 61.355-80.25l-2.88-12.69zM163.16 144h332.86l-35.276 160H198.436zM240 416a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm256 0a32 32 0 1 1 32-32 32 32 0 0 1-32 32z" />
+                </svg>
+                Add to Cart
+            </button>
+
+            <!-- <div class="message" id="message"></div> -->
+        </div>
+        <div class="boxes box4">
+            <div class="productimg">
+                <img src="" alt="">
+            </div>
+
+            <div class="producttext">
+                Lorem, ipsum dolor.
+            </div>
+
+            <select>
+                <option value="Regular">Regular</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <style>
+                select {
+                    width: 40%;
+                    height: 8%;
+                    padding: 5px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: medium;
+                    background-color: aliceblue;
+                    border-radius: 5%;
+                }
+            </style>
+
+            <div class="quantity-selector">
+                <button class="decrement">−</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+
+            <button class="add-to-cart-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="cart-icon">
+                    <!-- Cart SVG icon -->
+                    <path
+                        d="M528.12 301.319l47.273-208A16 16 0 0 0 560 80H120L111.06 35.25A32 32 0 0 0 79.626 8H16A16 16 0 0 0 0 24v16a16 16 0 0 0 16 16h45.29l89.355 395.25A64 64 0 1 0 208 448h256a64 64 0 1 0 61.355-80.25l-2.88-12.69zM163.16 144h332.86l-35.276 160H198.436zM240 416a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm256 0a32 32 0 1 1 32-32 32 32 0 0 1-32 32z" />
+                </svg>
+                Add to Cart
+            </button>
+
+            <!-- <div class="message" id="message"></div> -->
+        </div>
+        <div class="boxes box5">
+            <div class="productimg">
+                <img src="" alt="">
+            </div>
+
+            <div class="producttext">
+                Lorem, ipsum dolor.
+            </div>
+
+            <select>
+                <option value="Regular">Regular</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <style>
+                select {
+                    width: 40%;
+                    height: 8%;
+                    padding: 5px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: medium;
+                    background-color: aliceblue;
+                    border-radius: 5%;
+                }
+            </style>
+
+            <div class="quantity-selector">
+                <button class="decrement">−</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+
+            <button class="add-to-cart-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="cart-icon">
+                    <!-- Cart SVG icon -->
+                    <path
+                        d="M528.12 301.319l47.273-208A16 16 0 0 0 560 80H120L111.06 35.25A32 32 0 0 0 79.626 8H16A16 16 0 0 0 0 24v16a16 16 0 0 0 16 16h45.29l89.355 395.25A64 64 0 1 0 208 448h256a64 64 0 1 0 61.355-80.25l-2.88-12.69zM163.16 144h332.86l-35.276 160H198.436zM240 416a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm256 0a32 32 0 1 1 32-32 32 32 0 0 1-32 32z" />
+                </svg>
+                Add to Cart
+            </button>
+
+            <!-- <div class="message" id="message"></div> -->
+        </div>
+        <div class="boxes box6">
+            <div class="productimg">
+                <img src="" alt="">
+            </div>
+
+            <div class="producttext">
+                Lorem, ipsum dolor.
+            </div>
+
+            <select>
+                <option value="Regular">Regular</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <style>
+                select {
+                    width: 40%;
+                    height: 8%;
+                    padding: 5px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: medium;
+                    background-color: aliceblue;
+                    border-radius: 5%;
+                }
+            </style>
+
+            <div class="quantity-selector">
+                <button class="decrement">−</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="increment">+</button>
+            </div>
+
+            <button class="add-to-cart-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="cart-icon">
+                    <!-- Cart SVG icon -->
+                    <path
+                        d="M528.12 301.319l47.273-208A16 16 0 0 0 560 80H120L111.06 35.25A32 32 0 0 0 79.626 8H16A16 16 0 0 0 0 24v16a16 16 0 0 0 16 16h45.29l89.355 395.25A64 64 0 1 0 208 448h256a64 64 0 1 0 61.355-80.25l-2.88-12.69zM163.16 144h332.86l-35.276 160H198.436zM240 416a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm256 0a32 32 0 1 1 32-32 32 32 0 0 1-32 32z" />
+                </svg>
+                Add to Cart
+            </button>
+
+            <!-- <div class="message" id="message"></div> -->
+        </div>
+    </div>
+
+
+
+    </section>
+
+    <style>
+        .vegcontent,
+        .nonvegcontent {
+            width: 100%;
+            background-color: rgb(9, 61, 10);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .boxes {
+            width: 30%;
+            /* Two boxes side by side */
+            height: 450px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            gap: 5%;
+        }
+
+        /* Box colors */
+
+        .productimg {
+            height: 25vh;
+            width: 70%;
+            border: 5px solid black;
+            border-top-right-radius: 15%;
+            border-bottom-left-radius: 15%;
+            border-style: ridge;
+            margin-top: 3%;
+
+        }
+
+        .producttext {
+            background-color: red;
+            height: 10%;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .nonvegcontent {
+            background-color: rgb(77, 24, 24);
+        }
+
+
+        /* Quantity Selector */
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .decrement,
+        .increment {
+            width: 35px;
+            height: 35px;
+            border: none;
+            background-color: #e89595;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .decrement:hover,
+        .increment:hover {
+            background-color: #e0e0e0;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .quantity-input {
+            width: 60%;
+            text-align: center;
+            font-size: 18px;
+            margin: 0 10px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        .quantity-input:focus {
+            border-color: #007bff;
+        }
+
+        .add-to-cart-button {
+            display: flex;
+            align-items: center;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #218838;
+        }
+
+        .add-to-cart-button:active {
+            transform: scale(0.95);
+        }
+
+        .cart-icon {
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+        }
+
+        /* .message {
+            color: #ff6f61;
+            font-size: 14px;
+
+        } */
+
+
+        .animate-cart {
+            animation: animateCart 0.5s ease-in-out;
+        }
+
+        @keyframes animateCart {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(18px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+        .added-to-cart .message {
+            animation: fadeOut 3s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        .add-to-cart-button svg {
+            fill: white;
+            margin-right: 20px;
+        }
+
+
+
+
+        @media (max-width: 768px) {
+            .boxes {
+                width: 95%;
+            }
+
+            .quantity-input {
+                width: 35%;
+            }
+        }
+    </style>
+
+
+
+    <div class="separation3">
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- About Us Section -->
+            <div class="footer-section about-us">
+                <h3>New Bombay Burger Halal</h3>
+                <p>We serve delicious Halal burgers made fresh every day. Visit us for a unique burger experience in New
+                    Delhi.</p>
+                <p><strong>Address:</strong> F-147, Nala Road, Jamia Nagar, Shaheen Bagh, New Delhi, Delhi 110025</p>
+                <p><strong>Opening Hours:</strong> 11 AM - 11 PM</p>
+            </div>
+
+
+            <!-- Contact Info Section -->
+            <div class="footer-section contact-us">
+                <h3>Get in Touch</h3>
+                <p><strong>Phone:</strong> <a href="tel:09971824117">099718 24117</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@newbombayburger.com">info@newbombayburger.com</a></p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 New Bombay Burger Halal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- The circular box with the arrow SVG -->
+    <div class="scroll-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+        </svg>
+    </div>
+
+    <style>
+        /* Style the circular box */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            width: 60px;
+            /* increased size */
+            height: 60px;
+            /* increased size */
+            border-radius: 50%;
+            border: 3px solid black;
+            border-style: dotted;
+            background-color: #848a4a;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style the arrow SVG */
+        .scroll-to-top svg {
+            width: 40px;
+            /* increased size */
+            height: 40px;
+            /* increased size */
+            margin: 10px;
+            fill: #ffffff;
+        }
+
+        /* Hide the arrow when scrolled to top */
+        .scroll-to-top.scrolled-to-top {
+            opacity: 0;
+        }
+
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            #scrollToTopBtn {
+                width: 50px;
+                height: 50px;
+            }
+
+            .gototop svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+
+
+
+    <script>
+        function openSidebar() {
+            document.getElementById("sidebar").classList.add("open");
+        }
+
+        function closeSidebar() {
+            document.getElementById("sidebar").classList.remove("open");
+        }
+
+
+        const contactLink = document.querySelector('#contact');
+        const footer = document.querySelector('footer');
+
+        contactLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.scrollTo({ top: footer.offsetTop, behavior: "smooth" });
+        });
+
+
+        //sidebar
+        const sidebarLinks = document.querySelectorAll('#sidebar a');
+
+        sidebarLinks.forEach((link) => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                let targetId = '';
+                switch (link.id) {
+
+                    case 'contact':
+                        targetId = 'footer';
+                        break;
+
+                    default:
+                        return;
+                }
+                const targetElement = document.querySelector(`#${targetId}`);
+                window.scrollTo({ top: targetElement.offsetTop, behavior: 'smooth' });
+                // Close the sidebar after scrolling
+                closeSidebar();
+            });
+        });
+
+        document.getElementById('home2').addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });
+
+
+
+
+        //leftswipe in mobile
+
+        // Add event listener to the document to close the sidebar on right swipe (for mobile devices)
+        document.addEventListener('touchstart', (event) => {
+            // Get the touch event coordinates
+            const touchX = event.touches[0].clientX;
+            const touchY = event.touches[0].clientY;
+
+            // Add event listener to the document to detect swipe gesture
+            document.addEventListener('touchend', (event) => {
+                // Get the touch event coordinates
+                const endTouchX = event.changedTouches[0].clientX;
+                const endTouchY = event.changedTouches[0].clientY;
+
+                // Check if the swipe gesture is a right swipe
+                if (endTouchX - touchX > 50 && Math.abs(endTouchY - touchY) < 100) {
+                    // Close the sidebar
+                    closeSidebar();
+                }
+            });
+        });
+
+
+
+        // JavaScript for handling quantity increment/decrement and Add to Cart functionality
+
+        // Get all the elements
+        // Get all the elements
+        const boxes = document.querySelectorAll('.boxes');
+        const incrementButtons = document.querySelectorAll('.increment');
+        const decrementButtons = document.querySelectorAll('.decrement');
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+        const quantityInputs = document.querySelectorAll('.quantity-input');
+
+        const cartIcons = document.querySelectorAll('.cart-icon');
+
+        // const productText = box.querySelector('.product-text').textContent; // Get the product text
+
+        // Add event listeners to increment and decrement buttons
+        incrementButtons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                const quantityInput = e.target.parentNode.querySelector('.quantity-input');
+                const currentValue = parseInt(quantityInput.value);
+                quantityInput.value = currentValue + 1;
+            });
+        });
+
+        decrementButtons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                const quantityInput = e.target.parentNode.querySelector('.quantity-input');
+                const currentValue = parseInt(quantityInput.value);
+                if (currentValue > 1) {
+                    quantityInput.value = currentValue - 1;
+                }
+            });
+        });
+
+        // Add event listener to add to cart button
+        addToCartButtons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                const box = e.target.parentNode;
+                const quantityInput = box.querySelector('.quantity-input');
+                const quantity = parseInt(quantityInput.value);
+                const producttext = box.querySelector('.producttext').textContent;
+
+                const selectElement = box.querySelector('select'); // Get the select element
+                const selectedOption = selectElement.options[selectElement.selectedIndex].value; // Get the selected option value
+
+                const cartIcon = box.querySelector('.cart-icon');
+
+                // Add to cart animation
+                box.classList.add('added-to-cart');
+                cartIcon.classList.add('animate-cart');
+
+                // Add a delay to show the animation
+                setTimeout(() => {
+                    messageDiv.textContent = 'Added to Cart!';
+                }, 500);
+
+                // Wait for the animation to finish before displaying the alert
+                setTimeout(() => {
+                    alert(`You have added ${producttext} (${selectedOption}) to your cart! Quantity: ${quantity}`);
+                }, 500);
+
+                // Remove the animation after 2 seconds
+                setTimeout(() => {
+                    box.classList.remove('added-to-cart');
+                    cartIcon.classList.remove('animate-cart');
+                }, 2000);
+            });
+        });
+
+
+
+        //Smooth scroll of veg and nonveg
+        function smoothScroll(targetId) {
+            // Get the target element by ID
+            const targetElement = document.getElementById(targetId);
+
+            // Check if the target element exists
+            if (targetElement) {
+                // Use the scrollIntoView method with smooth behavior
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+        // Add click event listeners for the buttons
+        document.getElementById('veg').addEventListener('click', function () {
+            smoothScroll('vegcontent');
+        });
+
+        document.getElementById('nonveg').addEventListener('click', function () {
+            smoothScroll('nonvegcontent');
+        });
+
+
+
+
+        //scrolltoTop
+
+        // Get the scroll-to-top element
+        const scrollToTop = document.querySelector('.scroll-to-top');
+
+        // Add event listener to the scroll-to-top element
+        scrollToTop.addEventListener('click', () => {
+            // Scroll to top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Add class to hide the arrow when scrolled to top
+            scrollToTop.classList.add('scrolled-to-top');
+        });
+
+        // Add event listener to the window scroll event
+        window.addEventListener('scroll', () => {
+            // Check if the user has scrolled past a certain threshold (e.g. 200px)
+            if (window.scrollY > 200) {
+                // Remove class to show the arrow when scrolled past threshold
+                scrollToTop.classList.remove('scrolled-to-top');
+            } else {
+                // Add class to hide the arrow when scrolled to top or below threshold
+                scrollToTop.classList.add('scrolled-to-top');
+            }
+        });
+
+        // Check if the page has been scrolled to the top when the page loads
+        if (window.scrollY === 0) {
+            // Add class to hide the arrow when scrolled to top
+            scrollToTop.classList.add('scrolled-to-top');
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

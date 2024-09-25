@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akronim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="section1" id="section1">
+
+        <nav>
+
+            <div class="logo">
+                <h2>
+                    BB
+                </h2>
+                <div class="logotext">
+                    <h4>Bombay Burger</h4>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <a class="home" id="home" href="">Home</a>
+                <a class="shop" id="shop" href="">Shop</a>
+                <a class="about" id="aboutnav" href="">About</a>
+                <a class="contact" id="contact" href="">Contact</a>
+
+
+                <div class="profile" href="">
+
+                    <a class="profilebox" href="">
+
+                        <div class="person" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="skyblue"
+                                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
+                            </svg>
+                        </div>
+
+                    </a>
+                </div>
+                <a class="hamburger" onclick="openSidebar()">
+
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="white"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        </svg>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+
+            <span class="close-btn" onclick="closeSidebar()">&times;</span>
+
+            <nav class="side-nav">
+
+                <a id="sideprofile" href="#">
+                    <div class="person" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
+                        </svg>
+                    </div>
+                    <div class="textpro">
+                        Profile
+                    </div>
+
+                </a>
+
+                <a id="home " href="">Home</a>
+                <a id="shop" href="">Shop</a>
+                <a id="aboutnav" href="">About</a>
+                <a id="contact" href="">Contact</a>
+            </nav>
+        </div>
+
+
+
+    </div>
+
+    <div class="separation1"></div>
+
+    
+    <div class="quotesection">
+        <div class="section-header">
+            <h3>Welcome to Bombay Burger</h3>
+            <!-- Section Header -->
+            <p>New Bombay Burger is focusing on delivering great tasting Pizzas, crispy Chicken and sides, superior
+                quality, exceptional customer service and value for money offerings. We have endeavoured to establish a
+                reputation for being a home delivery specialist capable of delivering pizzas to a community of loyal
+                consumers.</p>
+        </div>
+    </div>
+
+    <div class="separation2">
+
+    </div>
+
+
+
+    <div class="section2" id="section2">
+
+        <a href="pizzas.html">
+
+            <div class="box box1">
+                <p>
+                    Pizza
+                </p>
+
+            </div>
+        </a>
+
+
+        <div class="box box2" onclick="location.href='burger.html'">
+            <p>Burger</p>
+        </div>
+
+
+
+        <div class="box box3" id="sandwich-box">
+            <p>Sandwich</p>
+        </div>
+        <script>
+            document.getElementById("sandwich-box").addEventListener("click", function () {
+                window.location.href = "sandwich.html";
+            });
+        </script>
+
+
+        <a href="roll.html">
+            <div class="box box4">
+                <p>Roll</p>
+            </div>
+        </a>
+
+        <a href="frenchfry.html">
+            <div class="box box5">
+                <p>French Fry</p>
+            </div>
+        </a>
+        <a href="popcorn.html">
+            <div class="box box6">
+                <p>Chicken Popcorn</p>
+            </div>
+        </a>
+
+
+
+    </div>
+
+    <div class="separation3"></div>
+
+
+    <!-- About Section -->
+    <section id="aboutbelow" class="aboutbelow">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="welcome">Welcome to New Bombay Burger Halal, your go-to destination for delicious and authentic
+                fast food in the heart of New Delhi! Located at F-147, Nala Road, Jamia Nagar, Shaheen Bagh, our eatery
+                is dedicated to serving the best of halal cuisine to our valued customers.</p>
+            <div class="story">
+                <h3>Our Story</h3>
+                <p>At New Bombay Burger Halal, we're passionate about providing a unique dining experience that combines
+                    great taste, quality, and convenience. Our journey began with a simple idea - to serve
+                    mouth-watering fast food that's not only delicious but also halal, catering to the diverse tastes
+                    and preferences of our customers. Today, we're proud to be one of the most popular eateries in the
+                    city, loved by locals and visitors alike.
+
+                <div class="ownerimage">
+
+                </div>
+                </p>
+
+            </div>
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>Our mission is to provide exceptional fast food that's not only tasty but also hygienic and halal.
+                    We're committed to using only the freshest ingredients, sourced from trusted suppliers, to ensure
+                    that every bite is a delight for your taste buds. Our team of experienced chefs and friendly staff
+                    are dedicated to providing a warm and welcoming atmosphere, making you feel at home every time you
+                    visit us.</p>
+            </div>
+            <div class="testimonials">
+                <h3>What Our Customers Say</h3>
+                <ul>
+                    <li>
+                        <p>"The chicken burgers are to die for! The service is always prompt and friendly."</p>
+                        <span>- Rohan, Delhi</span>
+                    </li>
+                    <li>
+                        <p>"I'm a vegetarian, and I was impressed by the variety of options available. The food is fresh
+                            and delicious!"</p>
+                        <span>- Priya, Delhi</span>
+                    </li>
+                    <li>
+                        <p>"I've been to many fast food joints, but New Bombay Burger Halal is my favorite. The Frankies
+                            are amazing!"</p>
+                        <span>- Ahmed, Delhi</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="timings">
+                <h3>Our Timings</h3>
+                <p>We're open daily from 11 AM to 11 PM, making us the perfect spot for a quick bite or a late-night
+                    meal. Whether you're in the mood for a juicy burger, a crispy pizza, or a flavorful roll, we've got
+                    you covered!</p>
+            </div>
+            <div class="call-to-action">
+                <h3>Join the New Bombay Burger Halal Family</h3>
+                <p>At New Bombay Burger Halal, we're more than just a fast food joint - we're a family. Join us today
+                    and experience the difference for yourself. We can't wait to serve you!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="separation4"></div>
+
+
+
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- About Us Section -->
+            <div class="footer-section about-us">
+                <h3>New Bombay Burger Halal</h3>
+                <p>We serve delicious Halal burgers made fresh every day. Visit us for a unique burger experience in New
+                    Delhi.</p>
+                <p><strong>Address:</strong> F-147, Nala Road, Jamia Nagar, Shaheen Bagh, New Delhi, Delhi 110025</p>
+                <p><strong>Opening Hours:</strong> 11 AM - 11 PM</p>
+            </div>
+
+
+            <!-- Contact Info Section -->
+            <div class="footer-section contact-us">
+                <h3>Get in Touch</h3>
+                <p><strong>Phone:</strong> <a href="tel:09971824117">099718 24117</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@newbombayburger.com">info@newbombayburger.com</a></p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 New Bombay Burger Halal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- The circular box with the arrow SVG -->
+    <div class="scroll-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+        </svg>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
